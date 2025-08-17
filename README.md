@@ -76,3 +76,32 @@ bash run.sh
 ```
 
 After running the script, you will still need to start the backend and frontend servers manually in separate terminal windows, as described above.
+
+---
+
+## Running on Replit (Recommended)
+
+If you are having trouble running the project on your local machine, you can use [Replit](https://replit.com), an online IDE, to run it directly in your browser.
+
+1.  **Import the project into Replit:**
+    *   Create a free account on Replit.
+    *   Create a new project and import the code from the project's repository (e.g., from GitHub) or by uploading the project files.
+
+2.  **Initial Setup:**
+    *   When you first open the project in Replit, click the "Run" button at the top. This will execute the `run.sh` script and install all the necessary dependencies. Wait for this process to complete.
+
+3.  **Start the Servers:**
+    *   After the setup is complete, you will need to start the backend and frontend servers in separate shell tabs.
+    *   On the right side of the Replit interface, you will see a "Shell" tab. Open it. If you need another shell, click the "+" button next to the "Shell" tab to open a new one.
+    *   **In the first shell tab**, run the backend server:
+        ```bash
+        python school_management/backend/app/main.py
+        ```
+    *   **In the second shell tab**, run the frontend server:
+        ```bash
+        cd school_management/frontend
+        npm start
+        ```
+
+4.  **View the Application:**
+    *   Replit will automatically detect the running frontend server and open a webview on the right side of the screen, where you can see and interact with the application.

@@ -1,0 +1,10 @@
+# This file configures the project to run on Replit.
+
+# We specify python3 as the primary language. Replit is smart
+# enough to also provide a Node.js environment because it will
+# detect the package.json file for the frontend.
+language = "python3"
+
+# The command that will be executed when the "Run" button is pressed in Replit.
+# This command runs our setup script to install all dependencies.
+run = "bash run.sh"
